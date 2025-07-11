@@ -1,0 +1,248 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fb;
+    color: #222;
+}
+
+.navbar {
+    background: #2d3748;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+.nav-logo h2 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-link.active, .nav-link:hover {
+    color: #63b3ed;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1.5rem 2rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.hero-content {
+    flex: 1 1 350px;
+    max-width: 500px;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #4a5568;
+}
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+    background: #3182ce;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #225ea8;
+}
+.btn-secondary {
+    background: #e2e8f0;
+    color: #2d3748;
+}
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+.hero-image {
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+.hero-graphic {
+    font-size: 6rem;
+    color: #3182ce;
+    background: #e6f0fa;
+    border-radius: 50%;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+}
+
+.features {
+    background: #f8f9fb;
+    padding: 3rem 1.5rem;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.feature-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem 1.5rem;
+    flex: 1 1 250px;
+    max-width: 320px;
+    text-align: center;
+}
+.feature-icon {
+    font-size: 2.5rem;
+    color: #3182ce;
+    margin-bottom: 1rem;
+}
+.feature-card h3 {
+    margin: 0.5rem 0 0.75rem 0;
+    color: #2d3748;
+}
+.feature-card p {
+    color: #4a5568;
+}
+
+.cta {
+    background: #3182ce;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+.cta h2 {
+    margin-bottom: 1rem;
+}
+.cta p {
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background: #2d3748;
+    color: #fff;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+.footer-section h3, .footer-section h4 {
+    margin-top: 0;
+    color: #63b3ed;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-section ul li a:hover {
+    color: #63b3ed;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    color: #a0aec0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    .features-grid, .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #2d3748;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        z-index: 100;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+} 
